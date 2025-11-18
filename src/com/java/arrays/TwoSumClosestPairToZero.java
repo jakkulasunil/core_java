@@ -1,0 +1,27 @@
+package com.java.arrays;
+
+public class TwoSumClosestPairToZero {
+
+	static int minAbsSumPair(int[] arr) {
+		int res = arr[0] + arr[1];
+
+		for (int i = 0; i < arr.length - 1; i++) {
+			for (int j = i + 1; j < arr.length; j++) {
+				int sum = arr[i] + arr[j];
+				if (Math.abs(sum) < Math.abs(res)) {
+					res = sum;
+				} else if (Math.abs(sum) == Math.abs(res)) {
+					res = Math.max(res, sum);
+				}
+			}
+		}
+		return res;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int[] arr = { 0, -8, -6, 3 };
+	     System.out.println(minAbsSumPair(arr));
+	}
+
+}

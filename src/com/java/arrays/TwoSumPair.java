@@ -18,7 +18,6 @@ public class TwoSumPair {
 		// TODO Auto-generated method stub
 		int[] arr = { 0, -1, 2, -3, 1 };
         int target = -2;
-      
         if (twoSum(arr, target))
             System.out.println("true");
         else
