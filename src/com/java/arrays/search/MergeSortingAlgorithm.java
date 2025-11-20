@@ -29,7 +29,6 @@ public class MergeSortingAlgorithm {
 				j++;
 			}
 			k++;
-
 		}
 
 		while (i < n1) {
