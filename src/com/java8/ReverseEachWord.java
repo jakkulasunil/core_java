@@ -11,7 +11,6 @@ public class ReverseEachWord {
 		String reverse = Arrays.stream(input.split(" ")).map(i -> new StringBuffer(i).reverse())
 				.collect(Collectors.joining(" "));
 		System.out.println(reverse);
-
 	}
 
 }
