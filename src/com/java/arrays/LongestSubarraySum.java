@@ -6,14 +6,12 @@ public class LongestSubarraySum {
 		int res = 0;
 		for (int s = 0; s < arr.length; s++) {
 			int sum = 0;
-
 			for (int e = s; e < arr.length; e++) {
 				sum += (arr[e] == 0) ? -1 : 1;
 				if (sum == 0)
 					res = Math.max(res, e - s + 1);
 			}
 		}
-
 		return res;
 	}
 	public static void main(String[] args) {
