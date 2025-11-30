@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenerateAllSubstrings {
-
 	static List<String> findSubstrings(String s) {
 		ArrayList<String> res = new ArrayList<>();
 		int n = s.length();
@@ -17,7 +16,7 @@ public class GenerateAllSubstrings {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 String s = "abc";
+		 	String s = "abc";
 	        List<String> res = findSubstrings(s);
 	        for (String i : res) {
 	            System.out.print(i + " ");
