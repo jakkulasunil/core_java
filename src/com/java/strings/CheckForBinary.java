@@ -15,5 +15,4 @@ public class CheckForBinary {
 		String s = "0101010101010";
 		System.out.println(CheckForBinary.isBinary(s));
 	}
-
 }
