@@ -5,14 +5,12 @@ public class MostFrequentElement {
 		int n = arr.length;
 		int maxCount = 0;
 		int res = 0;
-
 		for (int i = 0; i < n; i++) {
 			int count = 0;
 			for (int j = i + 1; j < n; j++) {
 				if (arr[i] == arr[j])
 					count++;
 			}
-
 			if (count > maxCount || (count == maxCount && arr[i] > res)) {
 				maxCount = count;
 				res = arr[i];
