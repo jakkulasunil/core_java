@@ -14,7 +14,6 @@ public class CountPairsWithGivenSum {
 		}
 		return cnt;
 	}
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { 1, 5, 7, -1, 5 };
