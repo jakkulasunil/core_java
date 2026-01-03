@@ -15,7 +15,6 @@ public class SecondLargestElementInArray {
 				second = arr[i];
 		}
 		return second;
-
 	}
 
 	public static void main(String[] args) {
